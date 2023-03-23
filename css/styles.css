@@ -1,0 +1,262 @@
+:root {
+  --blue-color: #7149c6;
+  --red-color: #fc2947;
+  --light-red-color: #fe6244;
+  --light-color: #ffdeb9;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--blue-color);
+}
+
+.header-container {
+  display: flex;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--light-color);
+  margin-right: 50px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-link {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--light-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--light-red-color);
+}
+
+/* Hero */
+.hero-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-description-wrapper {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 44px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--red-color);
+  margin-bottom: 50px;
+}
+
+.hero-description {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--blue-color);
+  margin-bottom: 50px;
+}
+
+/* About */
+.about-section {
+  padding-bottom: 50px;
+}
+
+.about-title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--red-color);
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-item {
+  flex-basis: 380px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-item-image {
+  width: 380px;
+  height: 240px;
+  object-fit: contain;
+}
+
+.about-item-description {
+  padding: 30px 20px;
+}
+
+.about-item-title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--blue-color);
+  margin-bottom: 10px;
+}
+
+.about-item-text {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--blue-color);
+}
+
+/* Team */
+.team-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--light-red-color);
+}
+
+.team-title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--light-color);
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.team-item-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--light-color);
+}
+
+.team-item-role {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--light-color);
+}
+
+/* Footer */
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--blue-color);
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--light-color);
+  margin-right: 50px;
+}
+
+
+.footer-item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footer-contacts-link{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03;
+  line-height: 1.2;
+  color: var(--light-color);
+  margin-right: 50px;
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus{
+  color: var(--light-red-color);
+}
